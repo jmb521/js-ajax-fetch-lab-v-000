@@ -6,7 +6,7 @@ function getToken() {
 
 function forkRepo() {
   
-  fetch("/api.github.com/repos/learn-co-curriculum/js-ajax-fetch-lab", {
+  fetch("/api.github.com/repos/learn-co-curriculum/js-ajax-fetch-lab/forks", {
     headers: {
       Authorization: `token ${getToken()}`
     }
