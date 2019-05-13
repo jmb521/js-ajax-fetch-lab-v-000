@@ -7,6 +7,8 @@ function getToken() {
 function forkRepo() {
   
   fetch("/api.github.com/repos/learn-co-curriculum/js-ajax-fetch-lab/forks", {
+    method: 'POST', 
+    body: JSON.stringify(postData)
     headers: {
       Authorization: `token ${getToken()}`
     }
