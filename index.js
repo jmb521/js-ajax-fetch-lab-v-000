@@ -13,8 +13,8 @@ function forkRepo() {
       Authorization: `token ${getToken()}`
     }
   })
-  .then(resp => resp.json()),
-  .then(resp => showResults(resp))
+  .then(resp => resp.json());
+  .then(resp => showResults(resp));
 }
 
 function showResults(json) {
