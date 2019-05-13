@@ -5,12 +5,12 @@ function getToken() {
 }
 
 function forkRepo() {
-  
+  const token = "21658c791a5b934b3cadf3108c0e78f26781d4e0"
   fetch("https://api.github.com/repos/learn-co-curriculum/js-ajax-fetch-lab/forks", {
     method: 'POST', 
     
     headers: {
-      Authorization: `token ${getToken()}`
+      Authorization: `token ${token}`
     },
   })
   .then(resp => resp.json())
